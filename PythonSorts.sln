@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonSorts", "PythonSorts\PythonSorts.pyproj", "{68297E0A-AE68-43AE-9B26-D40C6C76677B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{051605CE-12B1-4CBE-A0B7-63CA003E531E}"
+	ProjectSection(SolutionItems) = preProject
+		PythonSorts\Test_PythonSorts.py = PythonSorts\Test_PythonSorts.py
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
