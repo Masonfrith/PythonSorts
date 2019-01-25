@@ -10,7 +10,7 @@ def insert_Sort(dataToSort):
         numeric data, or empty.
     Post-condition:
         A new list is made which will contain the same elements passed by
-        dataToSort, but will be returned sorted.
+        sortedData, but will be returned sorted.
         !!! The origional sequence given may be altered or even deleted by this
         method !!!
     Return:
@@ -18,5 +18,11 @@ def insert_Sort(dataToSort):
         in dataToSort, if given an empty set, returns a new empty list.
         all numeric data is treated as coming before text data, eg 999 comes before '0a'
     """
+    sData = list()
+    if dataToSort is None:
+        return None
+    elif len(dataToSort) == 0:
+        return sData # given empty container, so return empty list
+
     return
 
