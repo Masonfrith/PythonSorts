@@ -1,4 +1,4 @@
-
+print('test if pythonsorts file runs')
 
 def insert_Sort(dataToSort):
     """
@@ -18,3 +18,5 @@ def insert_Sort(dataToSort):
         in dataToSort, if given an empty set, returns a new empty list.
         all numeric data is treated as coming before text data, eg 999 comes before '0a'
     """
+    return
+
