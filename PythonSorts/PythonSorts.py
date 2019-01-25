@@ -21,8 +21,10 @@ def insert_Sort(dataToSort):
     sData = list()
     if dataToSort is None:
         return None
-    elif len(dataToSort) == 0:
-        return sData # given empty container, so return empty list
-
-    return
+    elif type(dataToSort) is int or type(dataToSort) is float:
+        sData.append(dataToSort)
+    else:
+        raise TypeError("InsertSort does not support data of type:", type(dataToSort))
+    
+    return sData
 

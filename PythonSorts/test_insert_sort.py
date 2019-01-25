@@ -40,7 +40,7 @@ class insert_sort_Test(unittest.TestCase):
         self.sList = ps.insert_Sort(aZero)
         self.assertEqual(self.sList, [0], 'Should return a list of single element: 0')
 
-        self.sList = ps.insert_Sort(aPosaPositiveInt)
+        self.sList = ps.insert_Sort(aPositiveInt)
         self.assertEqual(self.sList, [100089], 'should return list of single element: 100089')
 
     def test_LoneStrings_InsertSort(self):
