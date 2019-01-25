@@ -24,13 +24,24 @@ class insert_sort_Test(unittest.TestCase):
         self.assertIs(self.sList, None,
                       'insert_sort should return value None without error when passed data with value None')
 
+    # Test passing non-list single element numeric variables.
     def test_LoneNumbers_InsertSort(self):
         aInt = -4
         aFloat = -0.1159
         aZero = 0
         aPositiveInt = 100089
 
-        self.fail("Not Implemented Yet")
+        self.sList = ps.insert_Sort(aInt)
+        self.assertEqual(self.sList, [-4], 'should return a list of single element :-4')
+
+        self.sList = ps.insert_Sort(aFloat)
+        self.assertEqual(self.sList, [-0.1159], 'Should return a list of single element of type float which is: -0.1159')
+
+        self.sList = ps.insert_Sort(aZero)
+        self.assertEqual(self.sList, [0], 'Should return a list of single element: 0')
+
+        self.sList = ps.insert_Sort(aPosaPositiveInt)
+        self.assertEqual(self.sList, [100089], 'should return list of single element: 100089')
 
     def test_LoneStrings_InsertSort(self):
         aEmpty = ""
