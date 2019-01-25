@@ -2,16 +2,26 @@ import unittest
 import PythonSorts as ps
 
 class insert_sort_Test(unittest.TestCase):
+    sList = list()
+
+    def setUp(self):
+        self.sList = list()
+
+    def tearDown(self):
+        if self.sList is None:
+            self.sList = list()
+        self.sList.clear()
+
     def test_EmptyList_InsertSort(self):
         aList = list()
-        sList = ps.insert_Sort(aList)
-        self.assertEqual(sList, [], 
+        self.sList = ps.insert_Sort(aList)
+        self.assertEqual(self.sList, [], 
                          "Insert_Sort did not return an empty list!")
 
     def test_NoneData_InsertSort(self):
         x = None
-        sList = ps.insert_Sort(x)
-        self.assertIs(sList, None,
+        self.sList = ps.insert_Sort(x)
+        self.assertIs(self.sList, None,
                       'insert_sort should return value None without error when passed data with value None')
 
     def test_LoneNumbers_InsertSort(self):
@@ -19,6 +29,7 @@ class insert_sort_Test(unittest.TestCase):
         aFloat = -0.1159
         aZero = 0
         aPositiveInt = 100089
+
         self.fail("Not Implemented Yet")
 
     def test_LoneStrings_InsertSort(self):
